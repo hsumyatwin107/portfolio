@@ -15,7 +15,7 @@
 body{
     width: 100%;
     height: 100vh;
-    overflow: hiddn;
+    /* overflow: hiddn; */
     background-color: black;
 }
 html {
@@ -133,8 +133,10 @@ nav{
     background-color: #077b32;
 }
 section{
+   
     width: 100%;
-    height: 90vh;
+    min-height: 100vh;
+    display: flex;
 }
 .main-container{
     width: 100%;
@@ -485,6 +487,23 @@ footer {
     color: #077b32;
     transform: scale(1.2);
 }
+.live-btn{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #077b32;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.live-btn:hover{
+    background-color: white;
+    color: #077b32;
+    border: 1px solid #077b32;
+}
 
    </style>
     <title>Hsu Myat Win Portfolio</title>
@@ -500,6 +519,7 @@ footer {
                 <div class="link"><a href="#about">About</a></div>
                 <div class="link"><a href="#skills">Skills</a></div>
                 <div class="link"><a href="#services">Services</a></div>
+                <div class="link"><a href="#experience">Experience</a></div>
                 <div class="link"><a href="#contact">Contact</a></div>
             </div>
             
@@ -511,6 +531,7 @@ footer {
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#services">Service</a>
+                <a href="#experience">Experience</a>
                 <a href="#contact">Contact</a>
                 <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
@@ -519,7 +540,7 @@ footer {
     <section id="home">
         <div class="main-container">
             <div class="image" data-aos="zoom-out" data-aos-duration="3000">
-                <img src="IMG_2275.JPG" alt="">
+                <img src="photo2.jpg" alt="Profile Image">
             </div>
             <div class="content">
                 <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Hsu Myat</span></h1>
@@ -532,7 +553,9 @@ footer {
                     <a href="https://linkedin.com/in/hsu-myat-win-hsu-myat-win-655227315" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
                 <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
-                    <button>Hire me</button>
+                    <a href="mailto:hsumyatwin107@gmail.com?subject=Hiring Inquiry&body=Hello Hsu, I would like to hire you." class="hire-btn">
+                    <button>Hire Me</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -540,8 +563,13 @@ footer {
     <section id="about">
         <h2 data-aos="fade-up" data-aos-duration="1500">About Me</h2>
         <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-            Write here about you</p>
-        </p>
+            Motivated and academically strong Computer Engineering student with a robust foundation in
+            mathematics, algorithms, and software development. Currently completing the final year with CGPA of 3.21/4.0 at Karabük
+            University (100% English-taught), with an Erasmus+ semester at the University of Latvia.
+            Experienced in full-stack web development, Windows Forms applications, and database design,
+            with hands-on knowledge of multiple programming languages and frameworks. Adaptable, cross-
+            culturally aware, and eager to contribute to innovative, research-oriented computer science
+            projects in both academic and professional environments.</p>
     </section>
 
    <!-- Skills Section -->
@@ -552,12 +580,12 @@ footer {
         <div class="skills-category" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
             <h3 data-aos="fade-up" data-aos-duration="1500">Programming Languages</h3>
             <ul>
-                <li>HTML & CSS</li>
-                <li>JavaScript</li>
                 <li>Python</li>
-                <li>C</li>
-                <li>C#</li>
                 <li>Java</li>
+                <li>C / C++ / C#</li>
+                <li>PHP</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
             </ul>
         </div>
 
@@ -565,20 +593,22 @@ footer {
         <div class="skills-category" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300">
             <h3 data-aos="fade-up" data-aos-duration="1500">Web Development</h3>
             <ul>
-                <li>ReactJS</li>
                 <li>Laravel</li>
-                <li>SQL/MySQL</li>
-                <li>PHP</li>
+                <li>React (TanStack)</li>
+                <li>FastAPI</li>
+                <li>FilamentPHP</li>
+                <li>HTML & CSS</li>
             </ul>
         </div>
 
         <!-- Design & UI/UX -->
         <div class="skills-category" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
-            <h3 data-aos="fade-up" data-aos-duration="1500">Design & UI/UX</h3>
+            <h3 data-aos="fade-up" data-aos-duration="1500">Database Design</h3>
             <ul>
-                <li>Graphic Design</li>
-                <li>UI/UX Design</li>
-                <li>SwiftUI</li>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+                <li>TablePlus</li>
+                <li>Database Design</li>
             </ul>
         </div>
 
@@ -586,11 +616,11 @@ footer {
         <div class="skills-category" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">
             <h3 data-aos="fade-up" data-aos-duration="1500">Other Skills</h3>
             <ul>
+                <li>Algorithms & Data Structures</li>
                 <li>Cryptography</li>
                 <li>Operating Systems</li>
-                <li>Data Communication</li>
-                <li>Microprocessors</li>
-                <li>Project Management</li>
+                <li>Computer Vision</li>
+                <li>Parallel Computing (OpenCL)</li>
             </ul>
         </div>
     </div>
@@ -605,7 +635,7 @@ footer {
         <button class="filter-btn" data-category="web-development" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">Web Development</button>
         <button class="filter-btn" data-category="app-development" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300">App Development</button>
         <button class="filter-btn" data-category="system-development" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">System Development</button>
-        <button class="filter-btn" data-category="design" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">Design</button>
+        <button class="filter-btn" data-category="web-application" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">Web Application</button>
     </div>
 
     <div class="projects-grid">
@@ -613,8 +643,8 @@ footer {
         <div class="project-card" data-category="web-development" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
             <img src="IMG_1.JPG" alt="Portfolio App" class="project-image">
             <div class="project-details">
-                <h3>Portfolio App</h3>
-                <p>-------</p>
+                <h3>Portfolio Website</h3>
+                <p>Personal portfolio website built with HTML, CSS, and JavaScript showcasing projects, skills, and contact information.</p>
             </div>
         </div>
 
@@ -622,8 +652,8 @@ footer {
         <div class="project-card" data-category="web-development" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
             <img src="IMG_4.JPG" alt="Student Management System" class="project-image">
             <div class="project-details">
-                <h3>------</h3>
-                <p>--------</p>
+                <h3>Hospital Management System</h3>
+                <p>Developed a web-based hospital system for managing patient records, appointments, and administrative tasks using Laravel and MySQL.</p>
             </div>
         </div>
 
@@ -631,8 +661,8 @@ footer {
         <div class="project-card" data-category="app-development" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
             <img src="IMG_5.JPG" alt="Library Management System" class="project-image">
             <div class="project-details">
-                <h3>---------</h3>
-                <p>--------------</p>
+                <h3>Library Management System</h3>
+                <p>C# Windows Forms application with SQLite database for managing book borrowing, returns, and library records.</p>
             </div>
         </div>
 
@@ -640,44 +670,98 @@ footer {
         <div class="project-card" data-category="system-development" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
             <img src="IMG_3.jpg" alt="Coffee Shop System" class="project-image">
             <div class="project-details">
-                <h3>---------</h3>
-                <p>--------------</p>
+                <h3>Coffee Shop Client-Server System</h3>
+                <p>TCP/IP system with C client and Java server supporting real-time order communication and timeout handling.</p>
             </div>
         </div>
 
-        <!-- Project 5: Design -->
-        <div class="project-card" data-category="design" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
-            <img src="project5-thumbnail.jpg" alt="Graphic Design" class="project-image">
+        <!-- Project 5: Web Application -->
+        <div class="project-card" data-category="web-application" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
+            <img src="scholar.jpg" alt="Graphic Design" class="project-image">
             <div class="project-details">
-                <h3>-----------</h3>
-                <p>------.</p>
+                <h3>Student Scholarship Management System</h3>
+                <p>
+                Developed a multilingual web-based system for managing student scholarship 
+                applications. Implemented secure authentication, application processing, 
+                and database management using Laravel, PHP, and SQL.
+                </p>
             </div>
         </div>
     </div>
 </section>
 
+<!-- Experience Section -->
+<section id="experience">
+    <h2 data-aos="fade-up" data-aos-duration="1500">My Experience</h2>
+    <div class="services-categories">
+        
+        <button class="filter-btn" data-category="Web Application Developer Intern" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">Web Application Developer Intern</button>
+        <button class="filter-btn" data-category="Software Development Intern" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">Software Development Intern</button>
+    </div>
 
+    <div class="projects-grid">
+
+        <!-- Experience 1 -->
+        <div class="project-card" data-category="Web Application Developer Intern" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
+            <img src="kbunet.JPG" alt="Karabuk University IT Department" class="project-image">
+
+            <div class="project-details">
+                <h3>Web Application Developer Intern</h3>
+                <p><strong>Karabük University IT Department</strong></p>
+
+                <p>
+                Worked on developing university web applications using Laravel, FilamentPHP, React (TanStack), FastAPI and Docker. Implemented backend systems and data scraping pipelines using Python to collect and process structured data.
+                </p>
+                <a href="https://kbunet.karabuk.edu.tr/" target="_blank" class="live-btn">
+                    View Live Website
+                </a>
+                <p><strong>Role:</strong> Backend Developer (Filament Admin Panel)</p>
+
+            </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="project-card" data-category="Software Development Intern" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
+            <!-- <img src="divi.jpg" alt="DIVI Grupa Latvia" class="project-image"> -->
+
+            <div class="project-details">
+                <h3>Software Development Intern</h3>
+                <p><strong>DIVI Grupa – Riga, Latvia</strong></p>
+
+                <p>
+                Developed a <b>computer vision system</b> using Python and OpenCV 
+                to analyze garment images and extract features such as 
+                neck shape, pocket presence and area. Generated vector 
+                outputs using SVG processing.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
     <!-- Contact Section -->
     <section id="contact">
-        <h2 data-aos="fade-up" data-aos-duration="1500">Contact Me</h2>
-        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-            I would love to hear from you! Whether it’s a project, job opportunity, or just a chat, feel free to contact me.
-        </p>
-        <form class="contact-form" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+    <h2 data-aos="fade-up" data-aos-duration="1500">Contact Me</h2>
+    <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+        I would love to hear from you! Whether it’s a project, job opportunity, or just a chat, feel free to contact me.
+    </p>
+    <form class="contact-form" id="contact-form" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+        <input type="hidden" name="to_email" value="hsumyatwin107@gmail.com">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
     <footer>
         <div class="footer-content">
-            <p>&copy; 2024 Hsu Myat Win. All Rights Reserved.</p>
+            <p>&copy; 2026 Hsu Myat Win. All Rights Reserved.</p>
             <div class="footer-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#services">Services</a>
+                <a href="#experience">Experience</a>
                 <a href="#contact">Contact</a>
             </div>
             <div class="footer-socials">
@@ -734,12 +818,9 @@ function cancel(){
 }
 // Typewriter Effect
 const texts = [
-    "Ios app Developer",
     "Web Developer",
-    "System Programmer",
     "Software Developer",
-    "Cryptography Enthusiast",
-    "Database Administrator/Developer",
+    "Database Administrator",
     "Data Analyst"
 ]
 let speed  =100;
@@ -769,6 +850,35 @@ function eraseText() {
 document.addEventListener("DOMContentLoaded", () => {
     typeWriter(); // Start the typewriter effect
 });
-    </script>
+</script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+
+e.preventDefault();
+
+emailjs.sendForm(
+'service_fbnhw77',
+'template_sy66xe6',
+this,
+'ltnd4umvC04bIJ3Nj'
+).then(function(response) {
+
+alert("Message sent successfully!");
+
+}, function(error) {
+
+console.log(error);
+alert("Failed to send message");
+
+});
+
+});
+
+});
+</script>
 </body>
 </html>

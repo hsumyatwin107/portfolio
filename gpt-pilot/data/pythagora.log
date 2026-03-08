@@ -1,0 +1,161 @@
+2025-09-24T08:36:51.311Z INFO SharedStateManager initialized
+2025-09-24T08:36:51.311Z INFO [Migration] Checking for database migration...
+2025-09-24T08:36:51.311Z INFO [Migration] No migration needed
+2025-09-24T08:36:51.311Z INFO [MainProvider] Creating new MainProvider instance...
+2025-09-24T08:36:51.313Z ERROR Database initialization error:
+Error: ENOENT: no such file or directory, mkdir '/pythagora/pythagora-core/data/database'
+Stack: Error: ENOENT: no such file or directory, mkdir '/pythagora/pythagora-core/data/database'
+    at Object.mkdirSync (node:fs:1374:26)
+    at PrismaSession.ensureDatabaseSync (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.4/out/core/CustomPrismaSession.js:61:20)
+    at new PrismaSession (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.4/out/core/CustomPrismaSession.js:17:18)
+    at Function.getInstance (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.4/out/core/CustomPrismaSession.js:28:38)
+    at new MainProvider (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.4/out/providers/MainProvider.js:73:45)
+    at Function.getInstance (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.4/out/providers/MainProvider.js:129:37)
+    at activate (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.4/out/extension.js:39:37)
+    at x0.n (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:4450)
+    at x0.m (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:4413)
+    at x0.l (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:3869)
+2025-09-24T08:36:51.317Z ERROR Error stdout:
+2025-09-24T08:36:51.317Z ERROR Error stderr:
+2025-09-24T08:36:51.317Z ERROR Failed to ensure database
+Error: Failed to initialize database: ENOENT: no such file or directory, mkdir '/pythagora/pythagora-core/data/database'
+stdout: undefined
+stderr: undefined
+Stack: Error: Failed to initialize database: ENOENT: no such file or directory, mkdir '/pythagora/pythagora-core/data/database'
+stdout: undefined
+stderr: undefined
+    at PrismaSession.ensureDatabaseSync (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.4/out/core/CustomPrismaSession.js:102:19)
+    at new PrismaSession (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.4/out/core/CustomPrismaSession.js:17:18)
+    at Function.getInstance (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.4/out/core/CustomPrismaSession.js:28:38)
+    at new MainProvider (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.4/out/providers/MainProvider.js:73:45)
+    at Function.getInstance (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.4/out/providers/MainProvider.js:129:37)
+    at activate (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.4/out/extension.js:39:37)
+    at x0.n (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:4450)
+    at x0.m (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:4413)
+    at x0.l (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:3869)
+2025-09-24T08:36:51.318Z INFO Is remote: false
+2025-09-24T08:36:51.319Z INFO Starting Local. Installation path: undefined
+2025-09-24T08:37:44.749Z INFO Closing entire Pythagora extension...
+2025-09-24T08:37:44.750Z ERROR Error closing extension
+Error: Canceled
+Stack: Canceled: Canceled
+    at new eA (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:31:109321)
+    at Zb.U (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:31:113933)
+    at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:31:111427)
+    at T0.g (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:32325)
+    at T0.executeCommand (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+    at Object.executeCommand (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:156:37049)
+    at closeEntirePythagoraExtension (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.4/out/extension.js:302:31)
+    at Object.deactivate (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.4/out/extension.js:212:15)
+    at hB.eb (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:11727)
+    at file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:9877
+    at Array.map (<anonymous>)
+    at hB.$ (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:9865)
+    at hB.terminate (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:10108)
+    at M3.terminate (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:119:1424)
+    at ps (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:174:15058)
+    at MessagePortMain.<anonymous> (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:174:11603)
+    at MessagePortMain.emit (node:events:519:28)
+    at MessagePortMain.emit (node:domain:488:12)
+    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2619)
+    at Object.topLevelDomainCallback (node:domain:160:15)
+    at Object.callbackTrampoline (node:internal/async_hooks:128:24)
+2025-09-24T08:37:53.595Z INFO SharedStateManager initialized
+2025-09-24T08:37:53.596Z INFO [Migration] Checking for database migration...
+2025-09-24T08:37:53.596Z INFO [Migration] No migration needed
+2025-09-24T08:37:53.596Z INFO [MainProvider] Creating new MainProvider instance...
+2025-09-24T08:37:53.598Z ERROR Database initialization error:
+Error: ENOENT: no such file or directory, mkdir '/pythagora/pythagora-core/data/database'
+Stack: Error: ENOENT: no such file or directory, mkdir '/pythagora/pythagora-core/data/database'
+    at Object.mkdirSync (node:fs:1374:26)
+    at PrismaSession.ensureDatabaseSync (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.6/out/core/CustomPrismaSession.js:61:20)
+    at new PrismaSession (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.6/out/core/CustomPrismaSession.js:17:18)
+    at Function.getInstance (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.6/out/core/CustomPrismaSession.js:28:38)
+    at new MainProvider (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.6/out/providers/MainProvider.js:73:45)
+    at Function.getInstance (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.6/out/providers/MainProvider.js:129:37)
+    at activate (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.6/out/extension.js:39:37)
+    at x0.n (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:4450)
+    at x0.m (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:4413)
+    at x0.l (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:3869)
+2025-09-24T08:37:53.601Z ERROR Error stdout:
+2025-09-24T08:37:53.601Z ERROR Error stderr:
+2025-09-24T08:37:53.601Z ERROR Failed to ensure database
+Error: Failed to initialize database: ENOENT: no such file or directory, mkdir '/pythagora/pythagora-core/data/database'
+stdout: undefined
+stderr: undefined
+Stack: Error: Failed to initialize database: ENOENT: no such file or directory, mkdir '/pythagora/pythagora-core/data/database'
+stdout: undefined
+stderr: undefined
+    at PrismaSession.ensureDatabaseSync (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.6/out/core/CustomPrismaSession.js:102:19)
+    at new PrismaSession (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.6/out/core/CustomPrismaSession.js:17:18)
+    at Function.getInstance (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.6/out/core/CustomPrismaSession.js:28:38)
+    at new MainProvider (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.6/out/providers/MainProvider.js:73:45)
+    at Function.getInstance (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.6/out/providers/MainProvider.js:129:37)
+    at activate (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.6/out/extension.js:39:37)
+    at x0.n (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:4450)
+    at x0.m (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:4413)
+    at x0.l (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:3869)
+2025-09-24T08:37:53.602Z INFO Is remote: false
+2025-09-24T08:37:53.603Z INFO Starting Local. Installation path: undefined
+2025-09-24T08:37:53.852Z INFO Closing entire Pythagora extension...
+2025-09-24T08:37:53.853Z ERROR Error closing extension
+Error: Canceled
+Stack: Canceled: Canceled
+    at new eA (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:31:109321)
+    at Zb.U (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:31:113933)
+    at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:31:111427)
+    at T0.g (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:32325)
+    at T0.executeCommand (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+    at Object.executeCommand (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:156:37049)
+    at closeEntirePythagoraExtension (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.6/out/extension.js:302:31)
+    at Object.deactivate (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.5.6/out/extension.js:212:15)
+    at hB.eb (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:11727)
+    at file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:9877
+    at Array.map (<anonymous>)
+    at hB.$ (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:9865)
+    at hB.terminate (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:10108)
+    at M3.terminate (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:119:1424)
+    at ps (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:174:15058)
+    at MessagePortMain.<anonymous> (file:///private/var/folders/5d/mglbzlbs1wn4xchv8nlvxzh40000gn/T/AppTranslocation/52AD5122-E9D0-40D9-8B11-4527445DFEDD/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:174:11603)
+    at MessagePortMain.emit (node:events:519:28)
+    at MessagePortMain.emit (node:domain:488:12)
+    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2619)
+    at Object.topLevelDomainCallback (node:domain:160:15)
+    at Object.callbackTrampoline (node:internal/async_hooks:128:24)
+2025-12-03T10:05:45.769Z INFO SharedStateManager initialized
+2025-12-03T10:05:45.770Z INFO Is remote: false
+2025-12-03T10:05:45.770Z INFO Starting Local. Installation path: /Users/hsumyatwin/WebTechFinalProject
+2025-12-03T10:05:45.770Z INFO [MainProvider] Creating new MainProvider instance...
+2025-12-03T10:05:45.770Z INFO [TabsManager] Code view listener set up at initialization
+2025-12-03T10:05:45.770Z INFO Installation path exists: /Users/hsumyatwin/WebTechFinalProject
+2025-12-03T10:05:45.770Z INFO Initializing database with URL: file:/Users/hsumyatwin/WebTechFinalProject/pythagora-core/data/database/pythagora.db
+2025-12-03T10:05:45.772Z INFO Database file exists, skipping prisma generate/push for faster startup
+2025-12-03T10:05:45.772Z INFO Database initialized successfully
+2025-12-03T10:05:45.772Z INFO [Migration] Checking for database migration...
+2025-12-03T10:05:45.863Z INFO [Migration] No migration needed
+2025-12-03T10:05:50.343Z INFO Closing entire Pythagora extension...
+2025-12-03T10:05:50.345Z ERROR Error closing extension
+Error: Canceled
+Stack: Canceled: Canceled
+	at new ij (file:///Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:120021)
+	at JS.U (file:///Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:124631)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:122125)
+	at Zy.g (file:///Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:41133)
+	at Zy.executeCommand (file:///Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:40637)
+	at Object.executeCommand (file:///Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:210:101000)
+	at closeEntirePythagoraExtension (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.6.14/out/extension.js:560:31)
+	at Object.deactivate (/Users/hsumyatwin/.vscode/extensions/pythagoratechnologies.pythagora-vs-code-2.6.14/out/extension.js:427:15)
+	at kX.eb (file:///Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:11850)
+	at file:///Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:10000
+	at Array.map (<anonymous>)
+	at kX.$ (file:///Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:9988)
+	at kX.terminate (file:///Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:10231)
+	at nN.terminate (file:///Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:120:914)
+	at Fs (file:///Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:402:10411)
+	at MessagePortMain.<anonymous> (file:///Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:402:6949)
+	at MessagePortMain.emit (node:events:519:28)
+	at MessagePortMain.emit (node:domain:489:12)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+Extra context: {
+  "message": "Canceled"
+}
