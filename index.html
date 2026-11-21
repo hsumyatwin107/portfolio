@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hsu Myat Win | Full-Stack & AI Engineer</title>
-    <meta name="description" content="Computer Engineering graduate and Master's student building production web systems, REST APIs, and AI-powered applications. Open to remote work and relocation.">
+    <title>Hsu Myat Win | Backend, Full-Stack & Applied AI Engineer</title>
+    <meta name="description" content="Backend and full-stack software engineer and Computer Engineering M.Sc. student building production web systems, APIs, and applied AI applications. Open to remote work and relocation.">
     <meta name="author" content="Hsu Myat Win">
+    <meta name="theme-color" content="#06110c">
     <meta property="og:title" content="Hsu Myat Win | Full-Stack & AI Engineer">
     <meta property="og:description" content="Production web systems, REST APIs, and AI-powered applications across Türkiye and Latvia.">
     <meta property="og:type" content="website">
@@ -554,6 +555,23 @@
 
         .project-card.hidden { display: none; }
 
+        .project-status {
+            display: inline-flex; align-items: center; width: fit-content;
+            border: 1px solid var(--line); border-radius: 999px;
+            padding: 5px 10px; margin-bottom: 10px;
+            color: var(--accent); background: rgba(62, 224, 138, 0.07);
+            font-size: 0.72rem; font-weight: 800; letter-spacing: .04em;
+            text-transform: uppercase;
+        }
+        .project-status.completed { color: var(--gold); background: rgba(227, 194, 122, .07); }
+        .project-status.research { color: #b8c8ff; background: rgba(120, 145, 255, .08); }
+        .research-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+        .research-card h3 { font-size: 1.08rem; margin-bottom: 9px; }
+        .research-card p { color: var(--muted); font-size: .92rem; }
+        .research-card .project-status { margin-top: 14px; margin-bottom: 0; }
+        @media (max-width: 1080px) { .research-grid { grid-template-columns: 1fr 1fr; } }
+        @media (max-width: 700px) { .research-grid { grid-template-columns: 1fr; } }
+
         .project-media {
             height: 210px;
             background:
@@ -752,6 +770,7 @@
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
+                <a href="#research">Research</a>
                 <a href="#skills">Skills</a>
                 <a href="#education">Education</a>
                 <a href="#contact">Contact</a>
@@ -763,6 +782,7 @@
             <a href="#about">About</a>
             <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
+            <a href="#research">Research</a>
             <a href="#skills">Skills</a>
             <a href="#education">Education</a>
             <a href="#contact">Contact</a>
@@ -776,8 +796,7 @@
             <h1 class="reveal d1">Hsu Myat <em>Win</em></h1>
             <div class="typewriter reveal d2">I'm a <span class="typewriter-text"></span><span class="caret">|</span></div>
             <p class="lead reveal d3">
-                Computer Engineering graduate and Master's student with international software experience in Türkiye and Latvia.
-                I design production web applications, REST APIs, database systems, and AI-powered tools with Python, FastAPI, Laravel, React, PostgreSQL, and Docker.
+                Backend / Full-Stack Software Engineer and Computer Engineering M.Sc. student with software development experience in Türkiye and Latvia. I build production web applications, REST APIs, database systems, and applied AI/ML tools using Python, FastAPI, Laravel, React, PostgreSQL, and Docker.
             </p>
             <div class="hero-actions reveal d3">
                 <a class="btn btn-primary" href="mailto:hsumyatwin107@gmail.com?subject=Hiring Inquiry&body=Hello Hsu, I would like to hire you.">Hire me</a>
@@ -812,7 +831,7 @@
         <div class="stat"><b>40%</b><span>Faster backend workflows</span></div>
         <div class="stat"><b>5,000+</b><span>University links on KBU-Net</span></div>
         <div class="stat"><b>83.90%</b><span>Skin cancer model accuracy</span></div>
-        <div class="stat"><b>2</b><span>Countries of industry experience</span></div>
+        <div class="stat"><b>2</b><span>Countries with professional experience</span></div>
     </div>
 
     <section id="about">
@@ -820,7 +839,7 @@
             <p class="section-kicker">About</p>
             <h2 class="section-title">Engineer with an international build path</h2>
             <p class="section-copy">
-                I recently completed a B.Sc. in Computer Engineering at Karabük University (CGPA 3.29/4) and started a Master's in Computer Engineering, both taught 100% in English. Through internships and industry-oriented projects I have shipped production applications, machine learning pipelines, and computer vision systems.
+                I completed my B.Sc. in Computer Engineering at Karabük University (CGPA 3.29/4.00) and am pursuing an M.Sc. in Computer Engineering. Both programmes are taught 100% in English. My work spans production software, backend engineering, machine learning, and computer vision.
             </p>
             <div class="about-grid">
                 <div class="card">
@@ -828,7 +847,7 @@
                         At Karabük University's IT department I maintain administrative platforms used across campus. In Riga I built industrial garment-inspection software with an international engineering team. I also contribute as a volunteer full-stack developer on a TÜBİTAK BİGG construction management platform.
                     </p>
                     <p style="margin-top:14px;color:var(--muted)">
-                        I am looking for Junior Software Engineer, Backend, Full-Stack, or AI/ML roles. Open to remote work and relocation.
+                        I am interested in Backend, Full-Stack, Software Engineering, and applied AI/ML opportunities. Open to remote work and relocation.
                     </p>
                     <div class="lang-pills">
                         <span class="pill">English C1</span>
@@ -869,7 +888,7 @@
                             <li>Designed 10+ REST API endpoints with backend validation, database operations, and frontend integration.</li>
                             <li>Optimized backend data-processing workflows, reducing response times by 40%.</li>
                             <li>Automated manual data-collection workflows, saving about 8 hours of repetitive work each week.</li>
-                            <li>Built and still maintain <a href="https://kbunet.karabuk.edu.tr/" target="_blank" rel="noopener">KBU-Net</a>, a campus platform for 5,000+ academic and student links with automated monitoring and failure alerts.</li>
+                            <li>Developed and maintain <a href="https://kbunet.karabuk.edu.tr/" target="_blank" rel="noopener">KBU-Net</a>, a campus platform for 5,000+ academic and student links with automated monitoring and failure alerts.</li>
                             <li>Shipped a timed quiz and certificate platform with randomized questions, server-side validation, and automated certificates.</li>
                             <li>Implemented Erasmus mobility and payment features: grant calculations, travel allowances, extra travel days, fee adjustments, and payment tracking.</li>
                         </ul>
@@ -896,7 +915,7 @@
                 </article>
                 <article class="exp">
                     <div>
-                        <div class="exp-when">Volunteer</div>
+                        <div class="exp-when">Contribution completed</div>
                         <div class="exp-place">TÜBİTAK BİGG Project</div>
                     </div>
                     <div>
@@ -921,97 +940,132 @@
         <div class="wrap">
             <p class="section-kicker">Selected work</p>
             <h2 class="section-title">Projects</h2>
-            <p class="section-copy">A mix of production university software, AI systems, backend platforms, and full-stack products.</p>
+            <p class="section-copy">Production software, backend platforms, mobile products, and applied AI systems. Status labels distinguish shipped work from active development and prototypes.</p>
             <div class="filters" id="projectFilters">
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="ai">AI / ML</button>
                 <button class="filter-btn" data-filter="fullstack">Full-stack</button>
                 <button class="filter-btn" data-filter="backend">Backend</button>
                 <button class="filter-btn" data-filter="vision">Computer Vision</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
             </div>
             <div class="projects-grid" id="projectGrid">
-                <article class="project-card" data-cats="fullstack">
+                <article class="project-card" data-cats="fullstack backend">
                     <div class="project-media"><img src="kbunet.JPG" alt="KBU-Net university web platform"></div>
-                    <div class="project-body">
-                        <h3>KBU-Net</h3>
-                        <p>Centralized university platform for managing and accessing 5,000+ academic and student links, with automated monitoring and failure notifications.</p>
-                        <div class="stack"><span class="tag">Laravel</span><span class="tag">React</span><span class="tag">MySQL</span><span class="tag">Docker</span></div>
-                        <div class="project-links">
-                            <a class="link-btn live" href="https://kbunet.karabuk.edu.tr/" target="_blank" rel="noopener">Live site</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="project-card" data-cats="ai fullstack">
-                    <div class="project-media"><img src="IMG_6.jpg" alt="Skin cancer detection screening result"></div>
-                    <div class="project-body">
-                        <h3>Skin Cancer Detection Platform</h3>
-                        <p>End-to-end medical image classification with a hybrid CNN + XGBoost pipeline. Achieved 83.90% test accuracy and 63.11% F1-score, then shipped a web app for real-time dermoscopic prediction.</p>
-                        <div class="stack"><span class="tag">TensorFlow</span><span class="tag">XGBoost</span><span class="tag">OpenCV</span><span class="tag">FastAPI</span></div>
-                        <div class="project-links">
-                            <a class="link-btn" href="https://github.com/hsumyatwin107/SkinCancerDetection" target="_blank" rel="noopener">GitHub</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="project-card" data-cats="ai fullstack">
-                    <div class="project-media"><img src="hackaton.jpg" alt="ArbiFi AI dispute resolver"></div>
-                    <div class="project-body">
-                        <h3>AI-Powered Dispute Resolver</h3>
-                        <p>Cursor Ankara Hackathon project (April 4, 2026). Built a working multi-role prototype in 5 hours with AI reasoning, Party A / Party B / Admin workflows, and structured OpenAI outputs.</p>
-                        <div class="stack"><span class="tag">Next.js</span><span class="tag">Prisma</span><span class="tag">PostgreSQL</span><span class="tag">OpenAI</span></div>
-                        <div class="project-links">
-                            <a class="link-btn" href="https://github.com/hsumyatwin107/ArbiFi" target="_blank" rel="noopener">GitHub</a>
-                        </div>
+                    <div class="project-body"><span class="project-status">Live in production</span><h3>KBU-Net</h3>
+                        <p>Centralized university platform serving 5,000+ academic and student links. Includes automated link checks, administrator email alerts, and activity logging.</p>
+                        <div class="stack"><span class="tag">Laravel</span><span class="tag">FastAPI</span><span class="tag">React</span><span class="tag">PostgreSQL</span><span class="tag">APScheduler</span><span class="tag">Docker</span></div>
+                        <div class="project-links"><a class="link-btn live" href="https://kbunet.karabuk.edu.tr/" target="_blank" rel="noopener">Live site</a></div>
                     </div>
                 </article>
                 <article class="project-card" data-cats="fullstack backend">
-                    <div class="project-media"><div class="placeholder-art"><i class="fa-solid fa-helmet-safety"></i></div></div>
-                    <div class="project-body">
-                        <h3>Construction Management Platform</h3>
-                        <p>Company-scoped platform covering procurement, planning, field operations, and progress tracking. Includes RBAC, JWT auth, tenant-aware authorization, and geospatial data with PostGIS.</p>
-                        <div class="stack"><span class="tag">Next.js</span><span class="tag">Node.js</span><span class="tag">PostGIS</span><span class="tag">Redis</span></div>
+                    <div class="project-media"><div class="placeholder-art"><i class="fa-solid fa-people-roof"></i></div></div>
+                    <div class="project-body"><span class="project-status completed">Contribution completed</span><h3>Construction Management Platform</h3>
+                        <p>Contributed backend APIs and data models for procurement, BOQ and estimates, purchase orders, construction planning, and field production workflows.</p>
+                        <div class="stack"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">TypeScript</span><span class="tag">Next.js</span><span class="tag">PostgreSQL</span><span class="tag">PostGIS</span><span class="tag">Redis</span><span class="tag">Docker</span></div>
+                    </div>
+                </article>
+                <article class="project-card" data-cats="mobile fullstack">
+                    <div class="project-media"><div class="placeholder-art"><i class="fa-solid fa-users"></i></div></div>
+                    <div class="project-body"><span class="project-status completed">Prototype completed</span><h3>RoomieMatch</h3>
+                        <p>Roommate matching mobile application with authentication, profile management, compatibility scoring, matching logic, and photo-verification workflows.</p>
+                        <div class="stack"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">SQLAlchemy</span><span class="tag">Alembic</span></div>
+                    </div>
+                </article>
+                <article class="project-card" data-cats="ai vision fullstack">
+                    <div class="project-media"><img src="IMG_6.jpg" alt="Skin lesion classification application"></div>
+                    <div class="project-body"><span class="project-status completed">Graduation project · Completed</span><h3>Skin Lesion Classification</h3>
+                        <p>Hybrid MobileNetV2 feature extraction and XGBoost classification on HAM10000, integrated into a FastAPI and React application. Test accuracy: 83.90%; F1: 63.11%. Academic prototype, not clinically validated.</p>
+                        <div class="stack"><span class="tag">TensorFlow</span><span class="tag">MobileNetV2</span><span class="tag">XGBoost</span><span class="tag">HAM10000</span><span class="tag">FastAPI</span><span class="tag">React</span></div>
+                        <div class="project-links"><a class="link-btn" href="https://github.com/hsumyatwin107/SkinCancerDetection" target="_blank" rel="noopener">GitHub</a></div>
+                    </div>
+                </article>
+                <article class="project-card" data-cats="ai vision fullstack">
+                    <div class="project-media"><div class="placeholder-art"><i class="fa-solid fa-face-smile"></i></div></div>
+                    <div class="project-body"><span class="project-status">Ongoing personal project</span><h3>BAYMAX — Emotion &amp; Wellness App</h3>
+                        <p>Facial emotion-recognition pipeline using FER2013, integrated with a FastAPI backend and React wellness dashboard. Includes face detection, input validation, and uncertainty handling. Not a medical diagnostic tool.</p>
+                        <div class="stack"><span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">MobileNetV2</span><span class="tag">OpenCV</span><span class="tag">FastAPI</span><span class="tag">React</span></div>
+                    </div>
+                </article>
+                <article class="project-card" data-cats="ai backend fullstack">
+                    <div class="project-media"><div class="placeholder-art"><i class="fa-solid fa-envelope-open-text"></i></div></div>
+                    <div class="project-body"><span class="project-status">Ongoing</span><h3>InboxPilot</h3>
+                        <p>Gmail-connected job-search assistant that synchronizes messages through OAuth, classifies application-related emails, and organizes recruiting activity.</p>
+                        <div class="stack"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">React</span><span class="tag">SQLAlchemy</span><span class="tag">Alembic</span><span class="tag">SQLite</span><span class="tag">Gmail API</span><span class="tag">OAuth</span></div>
+                    </div>
+                </article>
+                <article class="project-card" data-cats="ai backend fullstack">
+                    <div class="project-media"><div class="placeholder-art"><i class="fa-solid fa-dna"></i></div></div>
+                    <div class="project-body"><span class="project-status">Ongoing</span><h3>Developer Genome</h3>
+                        <p>AI-powered startup-success prediction application. Current development covers backend architecture, authentication, database integration, and machine-learning model integration.</p>
+                        <div class="stack"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">React</span><span class="tag">MySQL</span><span class="tag">SQLAlchemy</span><span class="tag">Machine Learning</span></div>
+                    </div>
+                </article>
+                <article class="project-card" data-cats="ai vision fullstack">
+                    <div class="project-media"><div class="placeholder-art"><i class="fa-solid fa-shirt"></i></div></div>
+                    <div class="project-body"><span class="project-status">Ongoing</span><h3>CyberCloset-AI</h3>
+                        <p>Exploring AI-assisted clothing fit and virtual try-on workflows through a web application.</p>
+                        <div class="stack"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">React</span><span class="tag">Tailwind CSS</span><span class="tag">MySQL</span></div>
+                    </div>
+                </article>
+                <article class="project-card" data-cats="ai vision mobile">
+                    <div class="project-media"><div class="placeholder-art"><i class="fa-solid fa-camera"></i></div></div>
+                    <div class="project-body"><span class="project-status">Ongoing</span><h3>HairTryOn</h3>
+                        <p>Mobile application project exploring virtual hairstyle try-on experiences.</p>
+                        <div class="stack"><span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">Computer Vision</span></div>
+                    </div>
+                </article>
+                <article class="project-card" data-cats="ai vision">
+                    <div class="project-media"><div class="placeholder-art"><i class="fa-solid fa-leaf"></i></div></div>
+                    <div class="project-body"><span class="project-status completed">Experimental work completed</span><h3>PlantDoc — Plant Disease Classification</h3>
+                        <p>18-class transfer-learning experiments with fine-tuning, augmentation, and class weighting; evaluated dataset quality and class imbalance. Accuracy: 64.09%; macro F1: 63.58%.</p>
+                        <div class="stack"><span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">MobileNetV2</span><span class="tag">Scikit-learn</span></div>
                     </div>
                 </article>
                 <article class="project-card" data-cats="backend">
                     <div class="project-media"><div class="placeholder-art"><i class="fa-solid fa-wallet"></i></div></div>
-                    <div class="project-body">
-                        <h3>USDT Wallet Case</h3>
-                        <p>Backend cryptocurrency wallet simulating USDT ERC-20 transfers. REST APIs for wallets, deposits, transfers, balances, and history, with idempotency, Decimal math, and 10 automated tests.</p>
-                        <div class="stack"><span class="tag">FastAPI</span><span class="tag">SQLAlchemy</span><span class="tag">PostgreSQL</span><span class="tag">Pytest</span></div>
-                        <div class="project-links">
-                            <a class="link-btn" href="https://github.com/hsumyatwin107/usdt-wallet-case" target="_blank" rel="noopener">GitHub</a>
-                        </div>
+                    <div class="project-body"><span class="project-status completed">Completed · Simulation</span><h3>USDT Wallet Backend</h3>
+                        <p>Backend simulation of wallet creation, deposits, transfers, and transaction history with validation and financial calculations. No real blockchain or cryptocurrency integration.</p>
+                        <div class="stack"><span class="tag">FastAPI</span><span class="tag">SQLAlchemy</span><span class="tag">PostgreSQL</span><span class="tag">Pydantic</span><span class="tag">Pytest</span></div>
+                        <div class="project-links"><a class="link-btn" href="https://github.com/hsumyatwin107/usdt-wallet-case" target="_blank" rel="noopener">GitHub</a></div>
                     </div>
                 </article>
                 <article class="project-card" data-cats="fullstack">
-                    <div class="project-media"><img src="scholar.jpg" alt="Scholarship application system"></div>
-                    <div class="project-body">
-                        <h3>Scholarship Application System</h3>
-                        <p>Secure multilingual scholarship platform (EN/TR/AR) with role-based access, student records, and Laravel MVC workflows for applications and administration.</p>
-                        <div class="stack"><span class="tag">Laravel</span><span class="tag">PHP</span><span class="tag">MySQL</span></div>
+                    <div class="project-media"><div class="placeholder-art"><i class="fa-solid fa-certificate"></i></div></div>
+                    <div class="project-body"><span class="project-status completed">Completed</span><h3>Selection_Word</h3>
+                        <p>Timed quiz and certificate platform with randomized questions, server-side validation, administration tools, and automated certificate generation.</p>
+                        <div class="stack"><span class="tag">Laravel</span><span class="tag">React</span><span class="tag">Inertia.js</span><span class="tag">TypeScript</span><span class="tag">MySQL</span></div>
+                        <div class="project-links"><a class="link-btn live" href="https://turkcesevdalisimuratbulut.com" target="_blank" rel="noopener">Live site</a></div>
                     </div>
                 </article>
-                <article class="project-card" data-cats="vision">
-                    <div class="project-media"><div class="placeholder-art"><i class="fa-solid fa-shirt"></i></div></div>
-                    <div class="project-body">
-                        <h3>Garment Feature Detection</h3>
-                        <p>Industrial computer vision software for garment analysis: neck shape, pocket presence, area calculation, and SVG vector output from processed images.</p>
-                        <div class="stack"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">SVG</span></div>
-                        <div class="project-links">
-                            <a class="link-btn" href="https://github.com/hsumyatwin107/Garment-Feature-Detection-Using-OpenCV-and-Python" target="_blank" rel="noopener">GitHub</a>
-                        </div>
+                <article class="project-card" data-cats="ai fullstack">
+                    <div class="project-media"><img src="hackaton.jpg" alt="AI dispute resolver hackathon prototype"></div>
+                    <div class="project-body"><span class="project-status completed">Hackathon prototype · 5 hours</span><h3>AI-Powered Dispute Resolver</h3>
+                        <p>Cursor Ankara Hackathon prototype with Party A, Party B, and Admin workflows and AI-generated structured dispute outcomes.</p>
+                        <div class="stack"><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Prisma</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span><span class="tag">OpenAI API</span></div>
+                        <div class="project-links"><a class="link-btn" href="https://github.com/hsumyatwin107/ArbiFi" target="_blank" rel="noopener">GitHub</a></div>
                     </div>
                 </article>
-                <article class="project-card" data-cats="fullstack">
-                    <div class="project-media"><img src="IMG_5.JPG" alt="Library management desktop app"></div>
-                    <div class="project-body">
-                        <h3>Library Management System</h3>
-                        <p>Windows Forms desktop app for book borrowing, returns, and inventory, with real-time SQLite updates and OOP structure.</p>
-                        <div class="stack"><span class="tag">C#</span><span class="tag">.NET</span><span class="tag">SQLite</span></div>
-                        <div class="project-links">
-                            <a class="link-btn" href="https://github.com/hsumyatwin107/library-Management-System-LBM-" target="_blank" rel="noopener">GitHub</a>
-                        </div>
+                <article class="project-card" data-cats="fullstack backend">
+                    <div class="project-media"><div class="placeholder-art"><i class="fa-solid fa-building-columns"></i></div></div>
+                    <div class="project-body"><span class="project-status completed">Deployment handover completed</span><h3>Erasmus Mobility &amp; Payment System</h3>
+                        <p>University mobility-payment workflows covering grant calculations, travel days, additional travel days, exceptional-student fees, and payment administration.</p>
+                        <div class="stack"><span class="tag">Laravel</span><span class="tag">React</span><span class="tag">Inertia.js</span><span class="tag">TypeScript</span></div>
                     </div>
                 </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="research">
+        <div class="wrap">
+            <p class="section-kicker">Academic work</p>
+            <h2 class="section-title">Research &amp; publications</h2>
+            <p class="section-copy">Research projects and technical reviews currently submitted for consideration. These are not presented as published papers.</p>
+            <div class="research-grid">
+                <article class="card research-card"><h3>Ocean Climate and Marine Life</h3><p>Machine-learning analysis using the Shifting Seas: Ocean Climate and Marine Life dataset, examining ocean-climate indicators and marine-life patterns.</p><span class="project-status research">Submitted to journal · Not yet published</span></article>
+                <article class="card research-card"><h3>Bluetooth Communication Technologies</h3><p>Technical literature review covering Bluetooth Classic, Bluetooth Low Energy (BLE), GATT, Mesh, Auracast, and Periodic Advertising with Responses (PAwR).</p><span class="project-status research">Submitted · Not yet published</span></article>
+                <article class="card research-card"><h3>Multi-Agent AI Orchestration for Cybersecurity</h3><p>Research on anomaly detection using LANL authentication data, comparison with machine-learning baselines, and a proposed multi-agent orchestration approach.</p><span class="project-status research">Submitted · Not yet published</span></article>
             </div>
         </div>
     </section>
@@ -1035,7 +1089,7 @@
                 </div>
                 <div class="card skill-card">
                     <h3>AI &amp; Machine Learning</h3>
-                    <div class="stack"><span class="tag">TensorFlow</span><span class="tag">Keras</span><span class="tag">PyTorch</span><span class="tag">Scikit-Learn</span><span class="tag">XGBoost</span><span class="tag">Transformers</span><span class="tag">Hugging Face</span><span class="tag">LLM APIs</span></div>
+                    <div class="stack"><span class="tag">TensorFlow</span><span class="tag">Keras</span><span class="tag">PyTorch</span><span class="tag">Scikit-Learn</span><span class="tag">XGBoost</span><span class="tag">Transformers</span><span class="tag">Hugging Face</span><span class="tag">LLM APIs</span><span class="tag">Model Evaluation</span></div>
                 </div>
                 <div class="card skill-card">
                     <h3>Computer Vision</h3>
@@ -1112,6 +1166,7 @@
             <div class="footer-links">
                 <a href="#home">Home</a>
                 <a href="#projects">Projects</a>
+                <a href="#research">Research</a>
                 <a href="#experience">Experience</a>
                 <a href="Hsu-Myat-Win-CV.pdf" download>CV</a>
             </div>
